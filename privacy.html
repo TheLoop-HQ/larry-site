@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy - Larry by The Loop</title>
+<meta name="description" content="How Larry, an AI executive assistant operated by The Loop, accesses, uses and protects the information in a customer's Google account.">
+<style>
+  :root { --ink:#1b1f24; --muted:#5b6470; --line:#e3e6ea; --bg:#ffffff; --accent:#6d3fe0; }
+  @media (prefers-color-scheme: dark) { :root { --ink:#e8eaee; --muted:#9aa3ae; --line:#2a2f36; --bg:#12151a; --accent:#a58bff; } }
+  html { background: var(--bg); }
+  body { font: 17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--ink); max-width: 44rem; margin: 0 auto; padding: 3rem 1.25rem 4rem; }
+  h1 { font-size: 1.8rem; line-height: 1.2; margin: 0 0 .4rem; }
+  h2 { font-size: 1.15rem; margin: 2.2rem 0 .5rem; }
+  .meta { color: var(--muted); margin-top: 0; }
+  a { color: var(--accent); }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+  th, td { text-align: left; vertical-align: top; padding: .5rem .6rem; border-bottom: 1px solid var(--line); }
+  footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <p><a href="index.html">&larr; Larry</a></p>
+  <h1>Privacy policy</h1>
+  <p class="meta">Larry by The Loop &middot; Last updated 19 October 2026</p>
+
+  <p>Larry is an AI executive assistant operated by The Loop Pty Ltd (ABN 39 698 023 522) ("The Loop", "we"). This policy explains what information Larry can access in a customer's Google account, what we do with it, and the controls the customer has.</p>
+
+  <h2>Who this covers</h2>
+  <p>Larry is set up for a named customer, who connects their own Google account to Larry and approves, on Google's consent screen, exactly what Larry may access. This policy covers the information Larry receives through that connection and through the customer's chat with Larry.</p>
+
+  <h2>What Larry can access</h2>
+  <table>
+    <tr><th>Google service</th><th>What Larry can do</th></tr>
+    <tr><td>Gmail</td><td>Read and search the customer's email, and create drafts. Larry does not send email.</td></tr>
+    <tr><td>Google Calendar</td><td>Read the customer's calendar and availability. Add entries to the customer's own calendar (with no other people on them). Accept, decline, move or cancel meetings and invite people only after the customer approves each action with a one-time code, or under a standing permission the customer has given for people inside their own organisation. Larry cannot change events the customer did not ask him to create, except through those approved actions.</td></tr>
+    <tr><td>Google Drive</td><td>Read files inside a single folder the customer chooses, and create documents and spreadsheets in a folder of his own. Larry can only see files he created or that sit in the chosen folder, and nothing he creates is shared with anyone.</td></tr>
+  </table>
+
+  <h2>Voice messages</h2>
+  <p>The customer can talk to Larry by voice message in Telegram. Voice messages are turned into text on the customer's dedicated server. The audio is not sent to a separate transcription service. The resulting text is treated like a typed message.</p>
+
+  <h2>How we use it</h2>
+  <p>We use this information only to provide Larry's assistant service to that customer: to summarise their email and calendar, prepare draft replies, remind them of what is outstanding, carry out actions they approve, and answer their questions. We do not use it for advertising, we do not sell it, and we do not share it with other customers.</p>
+
+  <h2>Where it is processed and stored</h2>
+  <ul>
+    <li>Each Larry runs on its own dedicated virtual machine in Microsoft Azure, Australia East, used only for that customer.</li>
+    <li>Access credentials are held in Azure Key Vault and are not available to Larry's own tools.</li>
+    <li>The customer chats with Larry through Telegram, so those messages also pass through Telegram's service.</li>
+    <li>To write summaries and drafts, relevant content is sent to our AI provider, Anthropic, which processes it to generate the response. We use Anthropic's commercial API, under terms that do not permit Anthropic to train its models on this content.</li>
+    <li>If Larry searches the web at the customer's request, only the search query is sent to the search provider. We design Larry to search for public information only.</li>
+  </ul>
+
+  <h2>Who can see it</h2>
+  <p>Our administrators can access a customer's dedicated server to keep it running and to fix faults. The Loop's staff do not read a customer's email, calendar or files, except where the customer asks us to investigate a specific fault, or where the law requires it. We do not disclose a customer's information to anyone else except to the service providers described above, or where required by law.</p>
+
+  <h2>How long we keep it</h2>
+  <p>Larry keeps short working notes (for example, a list of things the customer has asked him to remember) on the customer's dedicated server. We do not build a separate copy of the customer's mailbox. When a customer ends the service, we delete the server and its contents and remove the stored credentials.</p>
+
+  <h2>Controls</h2>
+  <ul>
+    <li><strong>Disconnect at any time.</strong> The customer can remove Larry's access from their Google Account at <a href="https://myaccount.google.com/connections">myaccount.google.com/connections</a>. Access stops immediately.</li>
+    <li><strong>Ask us.</strong> A customer can ask us to delete the working notes or the server at any time, or to tell them what we hold.</li>
+  </ul>
+
+  <h2>Google API Services User Data Policy</h2>
+  <p>The Loop's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+  <h2>Changes</h2>
+  <p>We will update this page if what Larry accesses or how we handle it changes, and change the date at the top.</p>
+
+  <h2>Contact</h2>
+  <p>The Loop Pty Ltd &ndash; <a href="mailto:adam.brown@loophq.com.au">adam.brown@loophq.com.au</a></p>
+
+  <footer><p>The Loop Pty Ltd (ABN 39 698 023 522)</p></footer>
+</main>
+</body>
+</html>
